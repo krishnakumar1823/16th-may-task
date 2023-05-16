@@ -1,0 +1,86 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	width:100%;
+	padding:40px;
+}
+.parent-heading{
+	padding-bottom:40px;
+}
+.parent-heading h1::before{
+	content:"";
+	width:50px;
+	height:2px;
+	background:#feb900;
+	display:inline-block;
+}
+.parent-heading h1::after{
+	content:"";
+	width:50px;
+	height:2px;
+	background:#feb900;
+	display:inline-block;
+}
+.parent-heading h1,p{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+.parent{
+	display:flex;
+	flex-wrap:wrap;
+	gap:3%;
+}
+.child1{
+	width:30%;	
+	align-items:center;
+	box-shadow:0 0 10px #ccc; 
+	overflow:hidden;
+}
+.child1:hover img{
+	transition:all 0.6s ease-in-out;
+	transform:scale(1.1);
+	
+}
+.child1:hover .child1-details h2,.child1:hover .child1-details a{
+	color:orange;
+} 
+.img1{
+	position:relative;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+.img1 h3{
+	position:absolute;
+	right:0;
+	bottom:0;
+	color:white;
+	background-color:orange;
+	font-size:25px;
+}
+.child1-details{
+	padding:30px;
+}
+.child1-details h2{
+	padding-bottom:20px;
+}
+.child1-details span{
+	padding:0 20px;
+}
+.child1-details i{
+	padding-right:20px;
+	color:orange;
+}
+.child1-details p{
+	border-bottom-style:solid;
+	padding:10px 0;	
+}
+.child1-details a{
+	text-decoration:none;
+	color:black;
+} 
